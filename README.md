@@ -18,4 +18,9 @@ Exercises for Section 14.1
 3. (Done)
 
 ## Part 3
-1. 
+See the super simple form in this repo. When the method was 'GET', the request sent was as expected, with the form info in the URL querry string.
+
+When the method was 'POST', however, my browsers and local servers handled it differently. With VS Code's Live Server, Chrome appears to have changed the method to 'GET' with status code '101 Switching Prtocols' and put the form data in the URL query string. With Live Server and Firefox, it showed status '405 Method Not Allowed'. With python -m http.server, both browsers got the response '501 Unsupported method ('POST').
+
+## Part 4
+URL API explored
